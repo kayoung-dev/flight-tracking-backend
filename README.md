@@ -1,2 +1,2 @@
 # flight-tracking-backend
-this is backend repository for flight tracking web service
+this is backend repository for flight watchlist web service
