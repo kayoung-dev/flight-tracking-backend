@@ -39,6 +39,8 @@ dependencies {
     // https://mvnrepository.com/artifact/org.springdoc/springdoc-openapi-starter-webmvc-ui
     // swagger
     implementation("org.springdoc:springdoc-openapi-starter-webmvc-ui:3.0.1")
+
+    runtimeOnly("org.mariadb.jdbc:mariadb-java-client")
 }
 
 tasks.withType<Test> {

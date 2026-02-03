@@ -11,10 +11,10 @@ import org.springframework.context.annotation.Configuration;
 @Configuration
 @OpenAPIDefinition(
         info = @Info(
-                title = "tutti-server API 문서",
+                title = "Airtracker API 문서",
                 version = "1.0",
-                description = "Tutti MarketPlace API",
-                contact = @Contact(name = "관리자", email = "tutti.service.center@gmail.com")
+                description = "This API is for airtracker app service",
+                contact = @Contact(name = "Gayoung Kim", email = "kayoungkim150@gmail.com")
         )
 )
 @SecurityScheme(
