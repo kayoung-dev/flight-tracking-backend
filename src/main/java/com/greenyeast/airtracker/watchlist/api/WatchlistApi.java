@@ -3,9 +3,12 @@ package com.greenyeast.airtracker.watchlist.api;
 import com.greenyeast.airtracker.watchlist.application.WatchlistService;
 import com.greenyeast.airtracker.watchlist.payload.request.WatchlistCreateRequest;
 import com.greenyeast.airtracker.watchlist.payload.response.WatchlistCreateResponse;
+import com.greenyeast.airtracker.watchlist.payload.response.WatchlistResponse;
+import java.util.List;
 import lombok.RequiredArgsConstructor;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
+import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
@@ -23,5 +26,11 @@ public class WatchlistApi implements WatchlistApiSpec {
     public ResponseEntity<WatchlistCreateResponse> create(@RequestBody WatchlistCreateRequest req) {
         WatchlistCreateResponse response = watchlistService.create(req);
         return ResponseEntity.status(HttpStatus.CREATED).body(response);
+    }
+
+    @Override
+    @GetMapping
+    public List<WatchlistResponse> getAllWatchlists(){
+        return null;
     }
 }
